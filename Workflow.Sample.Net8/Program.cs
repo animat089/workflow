@@ -1,8 +1,7 @@
 ﻿using Workflow.Core;
 using Workflow.Core.Middleware;
 using Workflow.Core.Steps;
-using Workflow.Sample;
-
+using Workflow.Sample.Net8;
 
 var workflowSteps = new List<IStep>
 {
@@ -15,7 +14,10 @@ var workflowMiddleware = new List<IWorkflowMiddleware>
     new LoggingMiddleware()
 };
 
-var context = new WorkflowContext(CancellationToken.None);
+var cancellationToken = new CancellationTokenSource();
+cancellationToken.CancelAfter(10);
+
+var context = new WorkflowContext(cancellationToken.Token);
 var workflow = new Workflow.Core.Workflow(workflowSteps, workflowMiddleware);
 
 try

@@ -1,6 +1,6 @@
 ﻿using Workflow.Core;
 
-namespace Workflow.Sample
+namespace Workflow.Sample.Net8
 {
     public class Step2 : IStep
     {

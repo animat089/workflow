@@ -1,11 +1,16 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35707.178 d17.12
+VisualStudioVersion = 17.12.35707.178
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Workflow.Core", "Workflow.Core\Workflow.Core.csproj", "{72AE2700-1BAC-4D98-A35C-6E1FC656817E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Workflow.Sample", "Workflow.Sample\Workflow.Sample.csproj", "{4267AC3B-9DC9-4849-BA98-AF0311433053}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Workflow.Sample.Net8", "Workflow.Sample.Net8\Workflow.Sample.Net8.csproj", "{4267AC3B-9DC9-4849-BA98-AF0311433053}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Workflow.Sample.Net48", "Workflow.Sample.Net48\Workflow.Sample.Net48.csproj", "{9698D1B2-6E4C-45BE-A2F8-740E5C9F51FF}"
+	ProjectSection(ProjectDependencies) = postProject
+		{72AE2700-1BAC-4D98-A35C-6E1FC656817E} = {72AE2700-1BAC-4D98-A35C-6E1FC656817E}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +26,10 @@ Global
 		{4267AC3B-9DC9-4849-BA98-AF0311433053}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4267AC3B-9DC9-4849-BA98-AF0311433053}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4267AC3B-9DC9-4849-BA98-AF0311433053}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9698D1B2-6E4C-45BE-A2F8-740E5C9F51FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9698D1B2-6E4C-45BE-A2F8-740E5C9F51FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9698D1B2-6E4C-45BE-A2F8-740E5C9F51FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9698D1B2-6E4C-45BE-A2F8-740E5C9F51FF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
